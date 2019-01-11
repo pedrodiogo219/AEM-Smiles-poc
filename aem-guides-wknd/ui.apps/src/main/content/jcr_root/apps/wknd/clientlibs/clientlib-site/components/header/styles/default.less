@@ -1,11 +1,14 @@
 /* WKND Header - default.less */
  
 .wknd-header {
+    background-color: @smiles-primary;
     z-index: 1030;
     position: fixed;
     top: 0;
-    height:92px;
+    //height:300px;
     padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
     left:0;
     right:0;
      
@@ -24,7 +27,7 @@
     }
      
     a.wknd-header-logo {
-        color: @text-color;
+        color: @smiles-secondary;
         font-weight: bolder;
         font-size: @font-size-xlarge;
         float:left;
@@ -50,17 +53,16 @@
         font-size: 1.5em;
     }
 }
- 
+
 .scrolly {
     .wknd-header {
-         
- 
+
         @media (min-width: (@screen-medium + 1)) {
-            height: 80px;
-            background-color: @body-bg;
+            //height: 300px;
             -webkit-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
             -moz-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
             box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
         }
     }
+
 }

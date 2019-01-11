@@ -25,7 +25,7 @@
         }
           
         .cmp-navigation__item-link {
-            color: @text-color;
+            color: @smiles-text-color;
             font-size: @font-size-medium;
             text-transform: uppercase;
             font-weight: bolder;
@@ -34,12 +34,15 @@
               
             &:hover,
               &:focus {
-                background-color: @brand-primary;
+                background-color: @smiles-secondary;
+                color: @smiles-primary;
               }
         }
           
         .cmp-navigation__item--active .cmp-navigation__item-link {
-            background-color: @brand-primary;
+            border: 2px solid @smiles-secondary;
+            border-radius: 10%;
+
         }
     }
       

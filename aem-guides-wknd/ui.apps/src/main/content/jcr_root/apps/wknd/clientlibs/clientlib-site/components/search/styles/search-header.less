@@ -17,6 +17,7 @@
           
         .cmp-search__icon {
             top: 0.7rem;
+            color: @smiles-secondary;
         }
           
         .cmp-search__clear-icon {
@@ -24,11 +25,11 @@
         }
               
         .cmp-search__input {
-            background-color: #ebebeb8a;
-            color:@text-color;
+            background-color: @smiles-primary;
+            color:@smiles-secondary;
             font-size: @font-size-medium;
             border-radius: 0px;
-            border:none;
+            border: 1px solid @smiles-secondary;
             height:40px;
             width:@search-width;
             padding-right: 2rem;
@@ -36,15 +37,16 @@
             transition: ease-in-out, width .35s ease-in-out;
  
             &:focus {
-                background-color: @body-bg;
+                background-color: @smiles-primary;
                 outline: none !important;
-                border:1px solid @text-color;
+                border:1px solid @smiles-text-color;
                 box-shadow: none;
                 width: @search-width-expand;
             }
                   
             &::placeholder { 
-                text-transform: uppercase;    
+                text-transform: uppercase;
+                color: @smiles-secondary;
                 }
  
                 @media (max-width: @screen-small) {
@@ -65,7 +67,7 @@
             background: @gray-dark;
               
             a.cmp-search__item {
-                color: @brand-third;
+                color: @smiles-text-color;
                 font-size: @font-size-small;
                 height: 50px;
                 text-overflow: ellipsis;
@@ -75,11 +77,11 @@
               
             a.cmp-search__item:hover {
                 text-decoration:none;
-                background: @gray-base;
+                background: @smiles-primary;
             }
               
             .cmp-search__item-mark {
-                background: @gray-base;
+                background: @smiles-primary;
                 color: @brand-third;
             }    
           }    

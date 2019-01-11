@@ -1,15 +1,15 @@
 /* WKND Layout Container Footer Style */
   
-@footer-background-color: #000;
+@footer-background-color: #7c7c7c;
 @footer-text-color: #fff;
   
   
 .cmp-layout-container--footer {
     background: @footer-background-color;
-    min-height: 365px;
+    min-height: 110px;
     margin-top: 3em;
     padding: 0 3em;
-     
+
     >.aem-Grid {
         .container-content();
     }
@@ -17,10 +17,16 @@
     @media (max-width: @screen-medium) {
             min-height:267px; 
     }
-      
-    p {
-           color: @footer-text-color;
-           font-size: @font-size-xsmall;
-           text-align:center;
-       }        
+
+    .cmp-text p{
+      padding-top: 20px;
+      color: @footer-text-color;
+      font-size: @font-size-xsmall;
+      font-family: @font-family-sans-serif;
+      font-weight: 100;
+      text-align:left;
+    }
+    .cmp-title h2{
+      font-family: @font-family-sans-serif;
+    }
 }

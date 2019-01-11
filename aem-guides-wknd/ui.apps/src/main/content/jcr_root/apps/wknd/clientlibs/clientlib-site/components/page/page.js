@@ -14,6 +14,7 @@
     $(window).scroll(function(){
            
          scroll = $(window).scrollTop();
+         scroll=1; //GAMBIARRA PRA MANTER A SOMBRA DO HEADER SEMPRE ATIVA
     if(scroll > 0 ) {
         target.addClass(className);
     } else {
